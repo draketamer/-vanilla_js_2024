@@ -1,17 +1,31 @@
-console.log("hi");
+// console.log("Hlleo my name is Nico");
+
+// function sayHello(nameOfPerson, age) {
+//   console.log("Hello my name is " + nameOfPerson);
+//   console.log("I'm " + age + " years old");
+// }
+
+// sayHello("nico", 10);
+// sayHello("lynn", 23);
+// sayHello("dal", 21);
+
+// function plus(a, b) {
+//   console.log(a + b);
+// }
+// function divide(a, b) {
+//   console.log(a / b);
+// }
+
+// plus(8, 60);
+// divide(98, 20);
 
 const player = {
   name: "nico",
-  points: 10,
-  fat: true,
+  sayHello: function (otherPersonsname) {
+    console.log("Hello " + otherPersonsname + " nice to meet you!");
+  },
 };
 
-console.log(player);
 console.log(player.name);
-console.log(player["name"]);
-player.fat = false;
-console.log(player);
-player.lastName = "potato";
-console.log(player);
-player.points = player.points + 15;
-console.log(player.points);
+player.sayHello("lynn");
+player.sayHello("dal");
