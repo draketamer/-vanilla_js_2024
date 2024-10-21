@@ -1,26 +1,17 @@
-const mon = "mon";
-const tue = "tue";
-const wed = "wed";
-const thu = "thu";
-const fri = "fri";
-const sat = "sat";
-const sun = "sun";
+console.log("hi");
 
-const daysOfWeek = [mon, tue, wed, thu, fri, sat];
+const player = {
+  name: "nico",
+  points: 10,
+  fat: true,
+};
 
-// const nonsense = [1,2,"hello", false, null, true, undefined,"nico"]
-
-// console.log(daysOfWeek,nonsense)
-
-//Get Item from Array
-console.log(daysOfWeek[5]);
-console.log(daysOfWeek[-1]); //undefined
-console.log(daysOfWeek[0,2]); // 3번째만 출력
-console.log(daysOfWeek[1,3]); // 4번째만 출력
-
-// Add one more day to the array
-daysOfWeek.push("sun");
-
-console.log(daysOfWeek[6]);
-
-
+console.log(player);
+console.log(player.name);
+console.log(player["name"]);
+player.fat = false;
+console.log(player);
+player.lastName = "potato";
+console.log(player);
+player.points = player.points + 15;
+console.log(player.points);
