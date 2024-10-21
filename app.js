@@ -1,20 +1,7 @@
-// console.log(54545454545);
-// console.log("라라라라");
+const amIFat = null;
+// null은 아무것도 없는것으로 채웠다는 의미
+console.log(amIFat);
 
-let a = 11;
-const b = 2;
-
-let myName = "nico";
-
-// 규칙은, 기본적으로 const를 쓰고 필요할 때만 let을 쓰되, var는 쓰지 말것
-
-console.log(a+b);
-console.log(a*b);
-console.log(a/b);
-console.log("Hello " + myName );
-
-
-myName = "nicolas"
-
-console.log("Hello " + myName );
-
+let something;
+// undefined는 메모리는 비어져 있는데 아무것도 채워지지 않았다는 의미
+console.log(something);
