@@ -29,3 +29,7 @@ const player = {
 console.log(player.name);
 player.sayHello("lynn");
 player.sayHello("dal");
+
+const days = [];
+days.push("aaa");
+console.log(days[0]);
