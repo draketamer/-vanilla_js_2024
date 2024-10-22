@@ -1,62 +1,40 @@
-// console.log("Hlleo my name is Nico");
-
-// function sayHello(nameOfPerson, age) {
-//   console.log("Hello my name is " + nameOfPerson);
-//   console.log("I'm " + age + " years old");
-// }
-
-// sayHello("nico", 10);
-// sayHello("lynn", 23);
-// sayHello("dal", 21);
-
-// function plus(a, b) {
-//   console.log(a + b);
-// }
-// function divide(a, b) {
-//   console.log(a / b);
-// }
-
-// plus(8, 60);
-// divide(98, 20);
-
-// const player = {
-//   name: "nico",
-//   sayHello: function (otherPersonsname) {
-//     console.log("Hello " + otherPersonsname + " nice to meet you!");
-//   },
-// };
-
-// console.log(player.name);
-// player.sayHello("lynn");
-// player.sayHello("dal");
-
-// const days = [];
-// days.push("aaa");
-// console.log(days[0]);
-// console.log(console);
-
-// function plus(a, b) {
-//   console.log(a + b);
-// }
-
-// plus(5, 10);
-
 const calculator = {
   add: function (a, b) {
-    console.log(a + b);
+    return a + b;
   },
   minus: function (a, b) {
-    console.log(a - b);
+    return a - b;
   },
-  multiple: function (a, b) {
-    console.log(a * b);
+  times: function (a, b) {
+    return a * b;
   },
   divide: function (a, b) {
-    console.log(a / b);
+    return a / b;
+  },
+  power: function (a, b) {
+    return a ** b;
   },
 };
 
-calculator.add(2, 4);
-calculator.minus(2, 4);
-calculator.multiple(2, 4);
-calculator.divide(2, 4);
+// console.log(calculator.add(2, 4));
+// console.log(calculator.minus(2, 4));
+// console.log(calculator.times(2, 4));
+// console.log(calculator.divide(2, 4));
+// console.log(calculator.power(2, 4));
+
+const plusResult = calculator.add(2, 4);
+const minusResult = calculator.minus(plusResult, 3);
+const timesResult = calculator.times(10, minusResult);
+const divideResult = calculator.divide(timesResult, plusResult);
+const powerResult = calculator.power(divideResult, plusResult);
+
+console.log(powerResult);
+
+const age = 96;
+function calculateKrAge(ageOfForeigner) {
+  return ageOfForeigner + 2;
+}
+
+const krAge = calculateKrAge(age);
+
+console.log(krAge);
