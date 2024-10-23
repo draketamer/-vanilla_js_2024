@@ -1,9 +1,12 @@
-const title = document.querySelector(".hello h1");
+const title = document.querySelector("div.hello:first-child h1");
 
-console.log(title);
+// console.dir(title);
+// title.style.color = "blue";
 
-// const hellos = document.getElementsByClassName("hello");
+function handleTitleClick() {
+  console.log("title was clicked!");
+  title.style.color = "blue";
+}
 
-// hellos.innerText = "Got you!";
-
-// console.log(hellos);
+// 클릭하면 글씨가 파랑으로 바뀌고 콘솔창에 타이틀 워즈 클릭드라는 스트링 출력
+title.addEventListener("click", handleTitleClick);
