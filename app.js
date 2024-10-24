@@ -1,26 +1,54 @@
-const title = document.querySelector("div.hello:first-child h1");
+const h1 = document.querySelector("div.hello:first-child h1");
 
 // console.dir(title);
-// title.style.color = "blue";
+// h1.style.color = "blue";
 
-console.dir(title);
+console.dir(h1);
 
 function handleTitleClick() {
   console.log("title was clicked!");
-  title.style.color = "blue";
+  h1.style.color = "blue";
 }
 
 function handleMouseEnter() {
   // console.log("mouse is here!");
-  title.innerText = "mouse is here!";
+  h1.innerText = "mouse is here!";
 }
 
 function handleMouseLeave() {
   // console.log("mouse is gone!");
-  title.innerText = "mouse is gone!";
+  h1.innerText = "mouse is gone!";
 }
 
-// 클릭하면 글씨가 파랑으로 바뀌고 콘솔창에 타이틀 워즈 클릭드라는 스트링 출력
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnter);
-title.addEventListener("mouseleave", handleMouseLeave);
+function handleWindowResize() {
+  document.body.style.backgroundColor = "tomato";
+}
+
+function handleWindowCopy() {
+  alert("copier!");
+}
+
+function handleWindowOffline() {
+  alert("SOS no WiFi");
+}
+
+function handleWindowOnline() {
+  alert("All Good!");
+}
+
+h1.addEventListener("click", handleTitleClick);
+// h1.onclick = handleTitleClick;
+
+h1.addEventListener("mouseenter", handleMouseEnter);
+// h1.onmouseenter = ("mouseenter", handleMouseEnter);
+
+h1.addEventListener("mouseleave", handleMouseLeave);
+
+window.addEventListener("resize", handleWindowResize);
+
+window.addEventListener("copy", handleWindowCopy);
+
+// 와이파이 연결상태 확인
+window.addEventListener("offline", handleWindowOffline);
+
+window.addEventListener("online", handleWindowOnline);
