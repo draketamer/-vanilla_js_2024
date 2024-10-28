@@ -1,14 +1,13 @@
-const h1 = document.querySelector("div.hello:first-child h1");
+// const loginForm = document.getElementById("login-form");
+// const loginInput = loginForm.querySelector("input");
+// const loginButton = loginForm.querySelector("button");
 
-function handleTitleClick() {
-  h1.classList.toggle("clicked");
-  //토글 함수가 아래 다섯줄을 대체
-  // const clickedClass = "clicked";
-  // if (h1.classList.contains(clickedClass)) {
-  //   h1.classList.remove(clickedClass) = "";
-  // } else {
-  //   h1.classList.add(clickedClass);
-  // }
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
+
+function onLoginBtnClick() {
+  console.log("Hello", loginInput.value);
+  // console.log("click!!!!");
 }
 
-h1.addEventListener("click", handleTitleClick);
+loginButton.addEventListener("click", onLoginBtnClick);
