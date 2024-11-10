@@ -7,10 +7,17 @@
     <title>Momentum App</title>
   </head>
   <body>
-    <div id="login-form">
-      <input type="text" placeholder="What is your name?" />
-      <button>Log In</button>
-    </div>
+    <form id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <!-- <button>Log In</button> -->
+      <input type="submit" value="Log In" />
+      <!-- → 엔터를 눌러도 자동으로 submit 됨 -->
+    </form>
     <!-- 자바스크립트 끌어오기 -->
     <script src="app.js"></script>
   </body>
