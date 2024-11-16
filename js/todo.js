@@ -3,6 +3,13 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
 
+const toDos = [];
+
+function saveToDos() {
+  localStorage.setItem("toDos", JSON.stringify(toDos));
+  // JSON은 array를  string으로 만들어주는 함수
+}
+
 function deleteToDo(event) {
   //   console.log(event.target.parentElement.innerText);
   const li = event.target.parentElement;
@@ -27,7 +34,9 @@ function handleToDoSubmit(event) {
   event.preventDefault();
   const newToDo = toDoInput.value;
   toDoInput.value = "";
+  toDos.push(newToDo);
   paintToDo(newToDo);
+  saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
