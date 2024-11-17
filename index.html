@@ -18,21 +18,25 @@
       <input type="submit" value="Log In" />
       <!-- → 엔터를 눌러도 자동으로 submit 됨 -->
     </form>
-    <h2 id="clock">00:00:00</h2>
     <h1 class="hidden" id="greeting"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list">
-      <!-- <li>
-        <span>text</span>
-        <button>X</button>
-      </li> -->
-    </ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+
+    <div id="center">
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+
+      <h2 id="clock">00:00:00</h2>
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
     </div>
+
     <div id="weather">
       <span></span>
       <span></span>
