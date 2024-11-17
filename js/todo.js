@@ -15,7 +15,7 @@ function saveToDos() {
 function deleteToDo(event) {
   //   console.log(event.target.parentElement.innerText);
   const li = event.target.parentElement;
-  console.log(li.id);
+  //   console.log(li.id);
   li.remove();
 }
 
@@ -59,3 +59,8 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
+
+// sexyFiler는 true를 리턴해야함. 이를 array에 포함하는거
+// function sexyFilter() {
+
+// }
